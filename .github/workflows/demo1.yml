@@ -6,18 +6,13 @@ jobs:
    steps:
     -name: Output event data
      run: echo "${{ toJSON(github.event)}}"
-
     -name: Get code
      uses: actions/checkout@v3
-
     -name: Install dependencies
      uses: npm ci
-
     -name: Test code
     -uses: npm run test
-
     -name: Build code
     -uses: npm run build
-
     -name: Depoly project
     -uses: echo "Deploying ..."
