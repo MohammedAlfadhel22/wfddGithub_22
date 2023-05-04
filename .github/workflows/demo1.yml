@@ -1,6 +1,6 @@
 name: Events Demo 1
 on: push
- jobs:
+jobs:
   deploy:
    runs-on: ubuntu-latest
    steps:
